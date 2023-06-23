@@ -1,0 +1,15 @@
+{
+	color: {
+		border: {
+			primary: { value: '{tw.white}88' },
+			secondary: { value: '{tw.white}44' },
+			tertiary: { value: '{tw.white}22' },
+			// "focus": { "value": "{tw.pink.500}66" },
+			active: { value: '{tw.white}88' },
+			success: { value: '{tw.green.500}CC' },
+			danger: { value: '{tw.orange.500}CC' },
+			warning: { value: '{tw.amber.500}' },
+			info: { value: '{tw.sky.500}CC' },
+		},
+	},
+}

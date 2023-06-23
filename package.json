@@ -1,0 +1,59 @@
+{
+	"name": "jyn-theme",
+	"displayName": "JYN Theme",
+	"description": "A minimalist theme for VS Code.",
+	"publisher": "",
+	"license": "MIT",
+	"version": "1.0.6",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrJayn/JYN-Theme"
+	},
+	"bugs": {
+		"url": "https://github.com/mrJayn/JYN-Theme/issues"
+	},
+	"engines": {
+		"vscode": "^1.70.0"
+	},
+	"scripts": {
+		"build": "node build.js",
+		"watch": "npm run build && chokidar \"tokens/**/*.json5\" -c \"npm run build\"",
+		"start": "npm run watch",
+		"prepublish": "npm run build",
+		"publish": "vsce publish"
+	},
+	"galleryBanner": {
+		"color": "#000000",
+		"theme": "dark"
+	},
+	"icon": "images/icon.png",
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"JYN",
+		"Dark Theme",
+		"Minimal",
+		"Minimal Theme",
+		"Style Dictionary"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "JYN Dark",
+				"uiTheme": "vs-dark",
+				"path": "./build/jyn-dark.color-theme.json"
+			},
+			{
+				"label": "JYN Light",
+				"uiTheme": "vs",
+				"path": "./build/jyn-light.color-theme.json"
+			}
+		]
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"chokidar-cli": "^3.0.0",
+		"style-dictionary": "^3.8.0"
+	}
+}

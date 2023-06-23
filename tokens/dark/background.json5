@@ -1,0 +1,52 @@
+{
+	color: {
+		background: {
+			primary: { value: '{tw.neutral.800}' },
+			secondary: { value: '{tw.neutral.900}' },
+			tertiary: { value: '{tw.neutral.950}' },
+			quaternary: { value: '{tw.neutral.950}' },
+
+			drop: { value: '{tw.slate.400}66' },
+			badge: { value: '{tw.sky.500}' },
+			debug: { value: '{tw.blue.500}' },
+
+			danger: { value: '{tw.red.500}' },
+			warning: { value: '{tw.orange.700}' },
+			success: { value: '{tw.green.700}' },
+			info: { value: '{tw.grey.100}' },
+
+			interactive: {
+				base: { value: '{tw.slate.600}88' },
+				hover: { value: '{tw.slate.400}88' },
+			},
+
+			drop: { value: '{color.background.selection.secondary.active.value}' },
+
+			selection: {
+				primary: {
+					active: { value: '{tw.sky.200}66' },
+					inactive: { value: '{tw.sky.200}44' },
+				},
+				secondary: {
+					active: { value: '{tw.blue.200}66' },
+					inactive: { value: '{tw.blue.200}44' },
+				},
+				tertiary: {
+					active: { value: '{tw.indigo.500}66' },
+					inactive: { value: '{tw.indigo.500}44' },
+				},
+			},
+
+			highlight: {
+				primary: {
+					active: { value: '{tw.yellow.400}66' },
+					inactive: { value: '{tw.yellow.400}44' },
+				},
+				secondary: {
+					active: { value: '{tw.teal.300}66' },
+					inactive: { value: '{tw.teal.300}44' },
+				},
+			},
+		},
+	},
+}

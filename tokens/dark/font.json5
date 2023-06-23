@@ -1,0 +1,51 @@
+{
+	color: {
+		font: {
+			primary: { value: '{tw.neutral.200}' },
+			secondary: { value: '{tw.neutral.300}' },
+			tertiary: { value: '{tw.neutral.200}88' },
+			quaternary: { value: '{tw.neutral.300}88' },
+			ghost: { value: '{tw.neutral.200}44' },
+			inverse: { value: '{color.background.primary.value}' },
+
+			active: { value: '{tw.slate.300}' },
+			success: { value: '{tw.green.300}' },
+			danger: { value: '{tw.red.300}' },
+			warning: { value: '{tw.orange.300}' },
+			info: { value: '{tw.sky.500}' },
+
+			link: {
+				primary: {
+					active: { value: '{tw.sky.500}' },
+					inactive: { value: '{tw.sky.500}CC' },
+				},
+				secondary: {
+					active: { value: '{tw.slate.300}' },
+					inactive: { value: '{tw.slate.300}CC' },
+				},
+			},
+
+			code: {
+				'1': { value: '{tw.red.300}' },
+				'2': { value: '{tw.orange.200}' },
+				'3': { value: '{tw.amber.200}' },
+				//'4': { value: '{tw.lime.400}' },
+				'5': { value: '{tw.lime.300}' },
+				'6': { value: '{tw.teal.400}' },
+				'7': { value: '{tw.sky.300}' },
+				'8': { value: '{tw.blue.300}' },
+				'9': { value: '{tw.violet.200}' },
+
+				'21': { value: '{tw.red.400}' },
+				'22': { value: '{tw.orange.500}' },
+				'23': { value: '{tw.yellow.500}' },
+				//'24': { value: '{tw.lime.600}' },
+				'25': { value: '{tw.lime.500}' },
+				'26': { value: '{tw.teal.600}' },
+				'27': { value: '{tw.sky.600}' },
+				'28': { value: '{tw.blue.500}' },
+				'29': { value: '{tw.neutral.200}' },
+			},
+		},
+	},
+}
