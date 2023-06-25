@@ -75,6 +75,85 @@
 				lighter: { value: '#FFCFE3' },
 			},
 		},
+	},
+	theme: {
+		white: '#ffffff',
+		black: '#000000',
+		transparent: '#00000000',
+
+		main: {
+			'5': '#f3f6fb',
+			'10': '#e7edf7',
+			'15': '#dbe5f3',
+			'20': '#cfdcef',
+			'25': '#c4d3eb',
+			'30': '#b8cae7',
+			'35': '#acc1e3',
+			'40': '#a0b9df',
+			'45': '#94b0db',
+			'50': '#88a7d7',
+			'55': '#7a96c2',
+			'60': '#6d86ac',
+			'65': '#5f7597',
+			'70': '#526481',
+			'75': '#44546c',
+			'80': '#364356',
+			'85': '#293240',
+			'90': '#1b212b',
+			'95': '#0e1115',
+			bright: '#508DEF',
+			neon: '#93c5fd',
+		},
+		grey: {
+			'10': '#f4f4f5',
+			'20': '#e4e4e7',
+			'30': '#d4d4d8',
+			'40': '#a1a1aa',
+			'50': '#71717a',
+			'60': '#52525b',
+			'70': '#37373a',
+			'80': '#27272a',
+			'90': '#18181b',
+			'95': '#09090b',
+		},
+		red: {
+			default: '#cc7070',
+			bright: '#ee6060',
+		},
+		orange: {
+			default: '#d57736',
+			bright: '#ffcc66',
+		},
+		yellow: {
+			default: '#d7d588',
+			bright: '#e2e066',
+		},
+		lime: {
+			default: '#d9f99d',
+			bright: '#ecfccb',
+		},
+		green: {
+			default: '#71A758',
+			bright: '#91C768',
+		},
+		teal: {
+			default: '#88CFD7',
+			bright: '#a5f3fc',
+		},
+		blue: {
+			default: '#88a7d7',
+			bright: '#508DCF',
+		},
+		purple: {
+			default: '#c0b8d7',
+			bright: '#c4b5e8',
+		},
+		pink: {
+			default: '#BE81BC',
+			bright: '#D788A7',
+		},
+	},
+	tw: {
 		// Tailwind CSS Colors
 		// slate , grey , zinc , neutral , stone
 		// red , orange , amber
@@ -83,8 +162,6 @@
 		// cyan , sky , blue , indigo
 		// violet , purple
 		// fuchsia , pink , rose
-	},
-	tw: {
 		black: '#000000',
 		white: '#ffffff',
 		slate: {

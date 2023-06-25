@@ -32,7 +32,10 @@
 			'property-value': {
 				css: { value: '{color.font.code.5.value}' },
 			},
-			'property-list': {},
+			'property-list': {
+				css: { value: '{color.font.code.7.value}' },
+				scss: { value: '{color.font.code.7.value}' },
+			},
 			selector: {
 				'*': { value: '{color.font.code.5.value}' },
 			},

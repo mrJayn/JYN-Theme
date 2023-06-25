@@ -1,11 +1,11 @@
 // Activity bar is showing on the far left or right and allows to switch between views of the side bar.
 {
 	activityBar: {
-		background: { value: '{color.background.tertiary.value}' },
+		background: { value: '{color.background.secondary.value}' },
 		foreground: { value: '{color.font.link.secondary.active.value}' },
 		activeBackground: {},
 		inactiveForeground: {},
-		border: {},
+		border: { value: '{color.background.tertiary.value}' },
 		dropBorder: { value: '{color.background.drop.value}' },
 		activeBorder: {},
 		activeFocusBorder: {},

@@ -12,8 +12,7 @@
 		// It might get overridden later depending on if the selection is a
 		// wordHighlight or wordHighlightStrong
 		selectionBackground: { value: '{color.background.selection.primary.active.value}' },
-		// When you select text, this is the background for *other* text that
-		// matches that selection
+		// When you select text, this is the background for *other* text that matches that selection
 		selectionHighlightBackground: { value: '{color.background.selection.secondary.inactive.value}' },
 		// When the selected text is not in the currently active window or pane
 		// This also happens in the sidebar for the currently open file when

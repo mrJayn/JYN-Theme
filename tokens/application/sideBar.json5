@@ -1,14 +1,14 @@
 {
 	sideBar: {
 		background: { value: '{color.background.secondary.value}' },
-		foreground: { value: '{color.font.secondary.value}' },
+		foreground: { value: '{color.font.link.secondary.inactive.value}' },
 		border: {},
 		dropBackground: { value: '{color.background.selection.primary.active.value}' },
 	},
 
 	sideBarSectionHeader: {
 		background: { value: '{color.background.secondary.value}' },
-		foreground: { value: '{color.font.tertiary.value}' },
+		foreground: { value: '{color.font.secondary.value}' },
 		border: { value: '{color.border.tertiary.value}' },
 	},
 

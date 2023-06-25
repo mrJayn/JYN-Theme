@@ -18,7 +18,7 @@
 				interface: {},
 				impl: {},
 				tag: {
-					'*': { value: '{color.font.code.21.value}' },
+					'*': { value: '{color.font.code.7.value}' },
 					reference: { value: '{color.font.code.8.value}' },
 					yaml: { value: '{color.font.code.22.value}' },
 				},

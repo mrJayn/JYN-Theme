@@ -1,16 +1,16 @@
 {
 	syntax: {
 		variable: {
-			'*': { value: '{color.font.code.26.value}' },
+			'*': { value: '{color.font.code.7.value}' },
 			language: {
 				super: {
-					value: '{color.font.code.5.value}',
+					value: '{color.font.code.7.value}',
 					fontStyle: 'italic',
 				},
-				this: { value: '{color.font.code.3.value}' },
+				this: { value: '{color.font.code.26.value}' },
 			},
 			other: {
-				'*': { value: '{color.font.code.26.value}' },
+				'*': { value: '{color.font.code.7.value}' },
 				constant: {
 					'*': { value: '{color.font.code.26.value}' },
 				},

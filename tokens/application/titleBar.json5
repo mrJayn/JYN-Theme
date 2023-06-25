@@ -2,10 +2,10 @@
 // it is not in fullscreen mode
 {
 	titleBar: {
-		border: { value: '#0000' },
+		border: { value: '{color.font.primary.value}22' },
 		activeBackground: { value: '{color.background.quaternary.value}' },
-		activeForeground: { value: '{color.font.primary.value}' },
-		inactiveBackground: { value: '{color.background.secondary.value}' },
-		inactiveForeground: { value: '{color.font.secondary.value}' },
+		activeForeground: { value: '{color.font.secondary.value}' },
+		inactiveBackground: { value: '{color.background.quaternary.value}' },
+		inactiveForeground: { value: '{color.font.quaternary.value}' },
 	},
 }

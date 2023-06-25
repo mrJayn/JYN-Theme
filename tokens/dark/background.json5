@@ -1,50 +1,50 @@
 {
 	color: {
 		background: {
-			primary: { value: '{tw.neutral.800}' },
-			secondary: { value: '{tw.neutral.900}' },
-			tertiary: { value: '{tw.neutral.950}' },
-			quaternary: { value: '{tw.neutral.950}' },
+			primary: { value: '{theme.grey.80}' },
+			secondary: { value: '{theme.grey.90}' },
+			tertiary: { value: '{theme.grey.95}' },
+			quaternary: { value: '{theme.grey.70}' },
 
-			drop: { value: '{tw.slate.400}66' },
-			badge: { value: '{tw.sky.500}' },
-			debug: { value: '{tw.blue.500}' },
+			drop: { value: '{theme.black}66' },
+			badge: { value: '{theme.main.bright}' },
+			debug: { value: '{theme.purple}' },
 
-			danger: { value: '{tw.red.500}' },
-			warning: { value: '{tw.orange.700}' },
-			success: { value: '{tw.green.700}' },
-			info: { value: '{tw.grey.100}' },
+			danger: { value: '{theme.red}' },
+			warning: { value: '{theme.orange}' },
+			success: { value: '{theme.lime}' },
+			info: { value: '{theme.blue}' },
 
 			interactive: {
-				base: { value: '{tw.slate.600}88' },
-				hover: { value: '{tw.slate.400}88' },
+				base: { value: '{theme.main.60}88' },
+				hover: { value: '{theme.main.40}88' },
 			},
 
 			drop: { value: '{color.background.selection.secondary.active.value}' },
 
 			selection: {
 				primary: {
-					active: { value: '{tw.sky.200}66' },
-					inactive: { value: '{tw.sky.200}44' },
+					active: { value: '{tw.sky.200}' },
+					inactive: { value: '{theme.teal}22' },
 				},
 				secondary: {
-					active: { value: '{tw.blue.200}66' },
-					inactive: { value: '{tw.blue.200}44' },
+					active: { value: '{theme.teal}44' },
+					inactive: { value: '{theme.teal}22' },
 				},
 				tertiary: {
-					active: { value: '{tw.indigo.500}66' },
-					inactive: { value: '{tw.indigo.500}44' },
+					active: { value: '{theme.grey.80}44' },
+					inactive: { value: '{theme.grey.80}22' },
 				},
 			},
 
 			highlight: {
 				primary: {
-					active: { value: '{tw.yellow.400}66' },
-					inactive: { value: '{tw.yellow.400}44' },
+					active: { value: '{theme.white}44' },
+					inactive: { value: '{theme.white}11' },
 				},
 				secondary: {
-					active: { value: '{tw.teal.300}66' },
-					inactive: { value: '{tw.teal.300}44' },
+					active: { value: '{theme.teal}66' },
+					inactive: { value: '{theme.teal}33' },
 				},
 			},
 		},

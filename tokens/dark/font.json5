@@ -1,50 +1,57 @@
 {
 	color: {
 		font: {
-			primary: { value: '{tw.neutral.200}' },
-			secondary: { value: '{tw.neutral.300}' },
-			tertiary: { value: '{tw.neutral.200}88' },
-			quaternary: { value: '{tw.neutral.300}88' },
-			ghost: { value: '{tw.neutral.200}44' },
+			primary: { value: '{theme.grey.10}' },
+			secondary: { value: '{theme.grey.20}' },
+			tertiary: { value: '{theme.grey.30}88' },
+			quaternary: { value: '{theme.grey.40}88' },
+			ghost: { value: '{theme.grey.30}44' },
 			inverse: { value: '{color.background.primary.value}' },
 
-			active: { value: '{tw.slate.300}' },
-			success: { value: '{tw.green.300}' },
-			danger: { value: '{tw.red.300}' },
-			warning: { value: '{tw.orange.300}' },
-			info: { value: '{tw.sky.500}' },
+			active: { value: '{theme.main.neon}' },
+			success: { value: '{theme.green}' },
+			danger: { value: '{theme.red}' },
+			warning: { value: '{theme.orange}' },
+			info: { value: '{theme.blue}' },
 
 			link: {
 				primary: {
-					active: { value: '{tw.sky.500}' },
-					inactive: { value: '{tw.sky.500}CC' },
+					active: { value: '{theme.main.50}' },
+					inactive: { value: '{theme.main.50}CC' },
 				},
 				secondary: {
-					active: { value: '{tw.slate.300}' },
-					inactive: { value: '{tw.slate.300}CC' },
+					active: { value: '{theme.white}' },
+					inactive: { value: '{theme.grey.50}' },
 				},
 			},
 
 			code: {
-				'1': { value: '{tw.red.300}' },
-				'2': { value: '{tw.orange.200}' },
-				'3': { value: '{tw.amber.200}' },
-				//'4': { value: '{tw.lime.400}' },
-				'5': { value: '{tw.lime.300}' },
-				'6': { value: '{tw.teal.400}' },
-				'7': { value: '{tw.sky.300}' },
-				'8': { value: '{tw.blue.300}' },
-				'9': { value: '{tw.violet.200}' },
+				'1': { value: '{theme.red}' },
+				'21': { value: '{theme.red.bright}' },
 
-				'21': { value: '{tw.red.400}' },
-				'22': { value: '{tw.orange.500}' },
-				'23': { value: '{tw.yellow.500}' },
-				//'24': { value: '{tw.lime.600}' },
-				'25': { value: '{tw.lime.500}' },
-				'26': { value: '{tw.teal.600}' },
-				'27': { value: '{tw.sky.600}' },
-				'28': { value: '{tw.blue.500}' },
-				'29': { value: '{tw.neutral.200}' },
+				'2': { value: '{theme.orange}' },
+				'22': { value: '{theme.orange.bright}' },
+
+				'3': { value: '{theme.yellow}' },
+				'23': { value: '{theme.yellow.bright}' },
+
+				'4': { value: '{theme.black}' },
+				'24': { value: '{theme.main.65}' },
+
+				'5': { value: '{theme.green}' },
+				'25': { value: '{theme.green.bright}' },
+
+				'6': { value: '{theme.teal}' },
+				'26': { value: '{theme.teal.bright}' },
+
+				'7': { value: '{theme.blue}' },
+				'27': { value: '{theme.blue.bright}' },
+
+				'8': { value: '{theme.main}' },
+				'28': { value: '{theme.main.bright}' },
+
+				'9': { value: '{theme.purple}' },
+				'29': { value: '{theme.purple.bright}' },
 			},
 		},
 	},

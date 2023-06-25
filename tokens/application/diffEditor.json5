@@ -1,11 +1,24 @@
 {
-	// For coloring inserted and removed text, use either a background
-	// or a border color but not both
+	// For coloring inserted/removed text >> use either background  OR  border color **BUT NOT BOTH**
 	diffEditor: {
 		insertedTextBackground: { value: '{color.background.success.value}33' },
 		insertedTextBorder: {},
 		removedTextBackground: { value: '{color.background.danger.value}33' },
 		removedTextBorder: {},
 		border: {},
+		diagonalFill: {},
+		insertedLineBackground: {},
+		removedLineBackground: {},
+		unchangedRegionBackground: {},
+	},
+
+	diffEditorGutter: {
+		insertedLineBackground: {},
+		removedLineBackground: {},
+	},
+
+	diffEditorOverview: {
+		insertedForeground: {},
+		removedForeground: {},
 	},
 }

@@ -1,7 +1,7 @@
 {
 	syntax: {
 		storage: {
-			'*': { value: '{color.font.code.8.value}' },
+			'*': { value: '{color.font.code.29.value}' },
 			modifier: {},
 			type: {
 				function: {},

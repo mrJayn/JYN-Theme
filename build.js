@@ -2,6 +2,27 @@ const StyleDictionary = require('style-dictionary');
 
 const THEME_VARIANTS = [`dark`, `light`];
 
+/* VSCodeTheme JSON format
+
+{
+	name: "themeName" ,
+  	type: "dark" || "light" ,
+  	colors: {
+		"activityBar.background": "#09090b",
+		 ...... ,
+	} ,
+  	tokenColors: {
+		{
+			scope: "constant.language.dart",
+			settings:{
+				foreground: "#d4d4d488"
+			}
+		} ,
+		...... ,
+  	}
+
+*/
+
 // Stringify the token object paths
 StyleDictionary.registerTransform({
 	name: 'vsCodeName',
@@ -19,24 +40,27 @@ StyleDictionary.registerTransform({
 	},
 });
 
-// Create a formatter for VSCode Theme JSONs
+// Register file formatter
 StyleDictionary.registerFormat({
 	name: 'vsCodeTheme',
 	formatter: (dictionary, config) => {
+		// Base
 		const theme = {
 			name: `JYN ${config.themeType}`,
 			type: config.themeType,
 			colors: {},
 		};
 
+		// Colors
 		dictionary.allProperties
 			.filter((token) => {
-				return !['color', 'tw', 'syntax'].includes(token.path[0]);
+				return !['color', 'theme', 'tw', 'syntax'].includes(token.path[0]);
 			})
 			.forEach((token) => {
-				theme.colors[token.name] = token.value;
+				theme.colors[token.name] = token.value['default'] ?? token.value;
 			});
 
+		// Token Colors
 		theme.tokenColors = dictionary.allProperties
 			.filter((token) => {
 				return token.path[0] === 'syntax';
@@ -44,7 +68,7 @@ StyleDictionary.registerFormat({
 			.map((token) => ({
 				scope: token.name,
 				settings: {
-					foreground: token.value,
+					foreground: token.value['default'] ?? token.value,
 					fontStyle: token.fontStyle,
 				},
 			}));

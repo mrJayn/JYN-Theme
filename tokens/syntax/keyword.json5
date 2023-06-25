@@ -7,7 +7,7 @@
 			// Using '*' here will apply this to the `keyword` scope
 			'*': { value: '{color.font.code.8.value}' },
 			control: {
-				'*': { value: '{color.font.code.8.value}' },
+				'*': { value: '{color.font.code.27.value}' },
 				conditional: {},
 				export: {},
 				import: {
@@ -23,7 +23,7 @@
 				},
 			},
 			operator: {
-				'*': { value: '{color.font.primary.value}' },
+				'*': { value: '{color.font.code.8.value}' },
 				arithmetic: {},
 				assignment: {},
 				bitwise: {},
