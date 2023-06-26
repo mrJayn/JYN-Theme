@@ -80,7 +80,6 @@
 		white: '#ffffff',
 		black: '#000000',
 		transparent: '#00000000',
-
 		main: {
 			'5': '#f3f6fb',
 			'10': '#e7edf7',
@@ -103,6 +102,7 @@
 			'95': '#0e1115',
 			bright: '#508DEF',
 			neon: '#93c5fd',
+			value: '#88a7d7',
 		},
 		grey: {
 			'10': '#f4f4f5',
@@ -111,57 +111,50 @@
 			'40': '#a1a1aa',
 			'50': '#71717a',
 			'60': '#52525b',
-			'70': '#37373a',
+			'70': '#3a3a3d',
 			'80': '#27272a',
 			'90': '#18181b',
 			'95': '#09090b',
+			value: '#71717a',
 		},
 		red: {
-			default: '#cc7070',
+			value: '#cc7070',
 			bright: '#ee6060',
 		},
 		orange: {
-			default: '#d57736',
+			value: '#d57736',
 			bright: '#ffcc66',
 		},
 		yellow: {
-			default: '#d7d588',
+			value: '#d7d588',
 			bright: '#e2e066',
 		},
 		lime: {
-			default: '#d9f99d',
+			value: '#d9f99d',
 			bright: '#ecfccb',
 		},
 		green: {
-			default: '#71A758',
+			value: '#71A758',
 			bright: '#91C768',
 		},
 		teal: {
-			default: '#88CFD7',
+			value: '#33cfd7',
 			bright: '#a5f3fc',
 		},
 		blue: {
-			default: '#88a7d7',
+			value: '#88a7d7',
 			bright: '#508DCF',
 		},
 		purple: {
-			default: '#c0b8d7',
+			value: '#c0b8d7',
 			bright: '#c4b5e8',
 		},
 		pink: {
-			default: '#BE81BC',
+			value: '#BE81BC',
 			bright: '#D788A7',
 		},
 	},
 	tw: {
-		// Tailwind CSS Colors
-		// slate , grey , zinc , neutral , stone
-		// red , orange , amber
-		// yellow , lime
-		// green , emerald , teal
-		// cyan , sky , blue , indigo
-		// violet , purple
-		// fuchsia , pink , rose
 		black: '#000000',
 		white: '#ffffff',
 		slate: {

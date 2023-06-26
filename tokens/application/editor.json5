@@ -3,33 +3,22 @@
 		background: { value: '{color.background.primary.value}' },
 		foreground: { value: '{color.font.primary.value}' },
 
-		// Editor colors with "highlight" in the name refer to times when parts
-		// of the code are highlighted, but might not be *selected*. For example
-		// when you search in the file it will *highlight* all occurrances, but
-		// will only *select* one at a time.
+		// Editor colors with "highlight" in the name refer to times when parts  of the code are highlighted, but might not be *selected*. For example when you search in the file it will *highlight* all occurrances, but will only *select* one at a time.
 
-		// This is the background of the selection you make with your cursor
-		// It might get overridden later depending on if the selection is a
-		// wordHighlight or wordHighlightStrong
+		// This is the background of the selection you make with your cursor It might get overridden later depending on if the selection is a wordHighlight or wordHighlightStrong
 		selectionBackground: { value: '{color.background.selection.primary.active.value}' },
+		inactiveSelectionBackground: { value: '{color.background.selection.primary.inactive.value}' },
 		// When you select text, this is the background for *other* text that matches that selection
 		selectionHighlightBackground: { value: '{color.background.selection.secondary.inactive.value}' },
-		// When the selected text is not in the currently active window or pane
-		// This also happens in the sidebar for the currently open file when
-		// the cursor is not in the file tree
-		inactiveSelectionBackground: { value: '{color.background.selection.primary.inactive.value}' },
 
-		// Word highlights are when you either set your cursor within a word,
-		// or select only that word
-		wordHighlightBackground: { value: '{color.background.highlight.primary.inactive.value}' },
-		// If you highlight a word and it is special, like if it has a tip
+		// Highlights when cursor is within or select only that word
+		wordHighlightBackground: { value: '{color.background.highlight.secondary.active.value}' },
+		// If you highlight a word and it is special
 		wordHighlightStrongBackground: { value: '{color.background.highlight.secondary.inactive.value}' },
 
 		// The current selected occurance of searched text
 		findMatchBackground: { value: '{color.background.highlight.primary.active.value}' },
-		// All occurances of found text that are not the current selected one
-		// this also applies to matches in the sidebar
-		// like searching in the file explorer
+		// Found text that are not the current selected & matches in the sidebar
 		findMatchHighlightBackground: { value: '{color.background.highlight.primary.inactive.value}' },
 
 		// When you "find in selection" this is the background for the selection
@@ -43,18 +32,13 @@
 		lineHighlightBackground: { value: '{color.background.secondary.value}' },
 		lineHighlightBorder: {},
 
-		// When you do a search in the file and it highlights the line
-		// of the match you are on
+		// When you do a search in the file and it highlights the line of the match you are on
 		rangeHighlightBackground: { value: '{color.background.tertiary.value}' },
 
 		// These are used in debugging
 		focusedStackFrameHighlightBackground: {},
 		stackFrameHighlightBackground: {},
 
-		// When you insert a snippet that has parts you need to edit,
-		// those are tabstops. Similar to selecting a part of text.
-		// NOTE: because the tabstop is selected, editor.selectionBackground is also
-		// applied
 		snippetTabstopHighlightBackground: {},
 		snippetTabstopHighlightBorder: {},
 		snippetFinalTabstopHighlightBackground: {},
@@ -67,14 +51,13 @@
 	},
 
 	editorCursor: {
-		foreground: { value: '{color.background.info.value}' },
+		foreground: { value: '{theme.yellow.bright}' },
 	},
 
 	editorLink: {
 		activeForeground: '{color.font.link.primary.inactive.value}',
 	},
 
-	// Next to the line numbers
 	editorGutter: {
 		background: { value: '{color.background.primary.value}' },
 		modifiedBackground: { value: '{color.border.info.value}' },
@@ -105,26 +88,28 @@
 		bracketMatchForeground: { value: '{editorBracketMatch.background.value}' },
 	},
 
-	// The squiggly lines when there is an error
+	// Error squiggly underline
 	editorError: {
 		foreground: { value: '{color.font.danger.value}' },
 		border: {},
 	},
-	// The squiggly lines when there is an warning
+	// Warning squiggly underline
 	editorWarning: {
 		foreground: { value: '{color.font.warning.value}' },
 		border: {},
 	},
+	// --
 	editorInfo: {
 		foreground: { value: '{color.font.info.value}' },
 		border: {},
 	},
+	// --
 	editorHint: {
 		foreground: { value: '{color.font.active.value}' },
 		border: {},
 	},
 
-	// Highlights the opening and closing brackets when the cursor is on one
+	// Highlights matched brackets when the cursor is on one
 	// Setting: editor.matchBrackets
 	editorBracketMatch: {
 		background: { value: '{color.background.highlight.secondary.inactive.value}' },
@@ -136,21 +121,20 @@
 		foreground: { value: '{color.font.ghost.value}' },
 	},
 
-	// Vertical line for indents
-	// Setting: editor.renderIndentGuides
-	// Setting: editor.highlightActiveIndentGuide
+	// Indent Line Color
+	// Setting: editor.renderIndentGuides || editor.highlightActiveIndentGuide
 	editorIndentGuide: {
 		background: { value: '{color.border.tertiary.value}' },
 		activeBackground: { value: '{color.border.primary.value}' },
 	},
 
-	// Vertical line at X characters, usually around 80
+	// Ruler Color
 	// Setting: editor.rulers
 	editorRuler: {
 		foreground: { value: '{color.border.secondary.value}' },
 	},
 
-	// Git information text in the editor
+	// Git info.
 	// Setting: editor.codeLens
 	editorCodeLens: {
 		foreground: { value: '{color.font.link.secondary.inactive.value}' },
@@ -158,7 +142,6 @@
 
 	// Unused code
 	editorUnnecessaryCode: {
-		// Only sets the opacity, not the actual color
 		opacity: { value: '#00000088' },
 		border: { value: '{color.border.primary.value}' },
 	},

@@ -24,27 +24,27 @@
 
 			selection: {
 				primary: {
-					active: { value: '{tw.sky.200}' },
-					inactive: { value: '{theme.teal}22' },
+					active: { value: '{tw.slate.500}60' },
+					inactive: { value: '{tw.slate.500}40' },
 				},
 				secondary: {
-					active: { value: '{theme.teal}44' },
-					inactive: { value: '{theme.teal}22' },
+					active: { value: '{tw.stone.500}60' },
+					inactive: { value: '{tw.stone.500}40' },
 				},
 				tertiary: {
-					active: { value: '{theme.grey.80}44' },
-					inactive: { value: '{theme.grey.80}22' },
+					active: { value: '{tw.violet.500}60' },
+					inactive: { value: '{color.background.primary.value}' },
 				},
 			},
 
 			highlight: {
 				primary: {
-					active: { value: '{theme.white}44' },
-					inactive: { value: '{theme.white}11' },
+					active: { value: '{tw.amber.500}' },
+					inactive: { value: '{tw.amber.500}' },
 				},
 				secondary: {
-					active: { value: '{theme.teal}66' },
-					inactive: { value: '{theme.teal}33' },
+					active: { value: '{tw.sky.500}60' },
+					inactive: { value: '{tw.sky.500}40' },
 				},
 			},
 		},

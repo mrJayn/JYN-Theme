@@ -12,9 +12,9 @@
 	editorSuggestWidget: {
 		foreground: { value: '{color.font.secondary.value}' },
 		background: { value: '{color.background.quaternary.value}' },
-		border: { value: '{color.border.secondary.value}' },
+		border: { value: '{theme.transparent}' },
 		highlightForeground: { value: '{color.font.primary.value}' },
-		selectedBackground: { value: '{color.background.selection.tertiary.active.value}' },
+		selectedBackground: { value: '{color.background.selection.primary.inactive.value}' },
 	},
 
 	// ex. Quick Fix popup or git hover popup

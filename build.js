@@ -57,7 +57,7 @@ StyleDictionary.registerFormat({
 				return !['color', 'theme', 'tw', 'syntax'].includes(token.path[0]);
 			})
 			.forEach((token) => {
-				theme.colors[token.name] = token.value['default'] ?? token.value;
+				theme.colors[token.name] = token.value;
 			});
 
 		// Token Colors
@@ -68,7 +68,7 @@ StyleDictionary.registerFormat({
 			.map((token) => ({
 				scope: token.name,
 				settings: {
-					foreground: token.value['default'] ?? token.value,
+					foreground: token.value,
 					fontStyle: token.fontStyle,
 				},
 			}));
