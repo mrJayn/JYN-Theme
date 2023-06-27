@@ -4,9 +4,7 @@ const path = require('path');
 
 // Get Variants
 const themesDirPath = path.join(process.cwd(), '/themes');
-const THEME_VARIANTS = fs.readdirSync(themesDirPath).filter((name) => {
-	return !['application', 'syntax', 'config.json5'].includes(name);
-});
+const THEME_VARIANTS = fs.readdirSync(themesDirPath).filter((dirent) => !['config.json5'].includes(dirent));
 
 // Stringify the token object paths
 StyleDictionary.registerTransform({
@@ -69,11 +67,11 @@ THEME_VARIANTS.forEach((themeType) => {
 		platforms: {
 			vscode: {
 				buildPath: `build/`,
-				themeType: themeType,
+				themeType: ['dark', 'light'].includes(themeType) ? themeType : 'dark',
 				transforms: [`vsCodeName`],
 				files: [
 					{
-						destination: `jyn-${themeType}.color-theme.json`,
+						destination: `${themeType}.color-theme.json`,
 						format: `vsCodeTheme`,
 					},
 				],

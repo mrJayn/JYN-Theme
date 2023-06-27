@@ -14,7 +14,7 @@
 		background: { value: '{color.background.quaternary.value}' },
 		border: { value: '{theme.transparent}' },
 		highlightForeground: { value: '{color.font.primary.value}' },
-		selectedBackground: { value: '{color.background.selection.primary.inactive.value}' },
+		selectedBackground: { value: '{color.background.selection.primary.inactive}' },
 	},
 
 	// ex. Quick Fix popup or git hover popup

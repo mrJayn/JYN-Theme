@@ -3,7 +3,7 @@
 		background: { value: '{color.background.secondary.value}' },
 		foreground: { value: '{color.font.link.secondary.inactive.value}' },
 		border: {},
-		dropBackground: { value: '{color.background.selection.primary.active.value}' },
+		dropBackground: { value: '{color.background.selection.primary.active}' },
 	},
 
 	sideBarSectionHeader: {

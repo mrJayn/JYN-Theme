@@ -1,11 +1,11 @@
 {
 	color: {
 		border: {
-			primary: { value: '{tw.white}88' },
-			secondary: { value: '{tw.white}44' },
-			tertiary: { value: '{tw.white}22' },
+			primary: { value: '#FFF8' },
+			secondary: { value: '#FFF4' },
+			tertiary: { value: '#FFF2' },
 			// "focus": { "value": "{tw.pink.500}66" },
-			active: { value: '{tw.white}88' },
+			active: { value: '#FFFA' },
 			success: { value: '{tw.green.500}CC' },
 			danger: { value: '{tw.orange.500}CC' },
 			warning: { value: '{tw.amber.500}' },

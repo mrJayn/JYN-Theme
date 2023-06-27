@@ -19,8 +19,8 @@
 	},
 
 	statusBarItem: {
-		activeBackground: { value: '{color.background.selection.secondary.active.value}' },
-		hoverBackground: { value: '{color.background.selection.secondary.inactive.value}' },
+		activeBackground: { value: '{color.background.selection.secondary.inactive}' },
+		hoverBackground: { value: '{color.background.selection.secondary.active}' },
 
 		prominentBackground: { value: '{color.background.badge.value}' },
 		prominentForeground: { value: '{color.font.primary.value}' },

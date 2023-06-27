@@ -1,0 +1,43 @@
+{
+	color: {
+		background: {
+			primary: { value: '{theme.grey.80}' },
+			secondary: { value: '{theme.grey.90}' },
+			tertiary: { value: '{theme.grey.95}' },
+			quaternary: { value: '{theme.grey.70}' },
+
+			drop: { value: '{theme.black}66' },
+			badge: { value: '{theme.main.bright}' },
+			debug: { value: '{theme.purple}' },
+
+			danger: { value: '{theme.red}' },
+			warning: { value: '{tw.yellow.500}' },
+			success: { value: '{theme.lime}' },
+			info: { value: '{theme.blue}' },
+
+			interactive: {
+				base: { value: '{theme.main.60}88' },
+				hover: { value: '{theme.main.30}88' },
+			},
+
+			drop: { value: '{theme.secondary.40}50' },
+
+			selection: {
+				primary: {
+					active: '{theme.main.50}50',
+					inactive: '{theme.main.50}20',
+				},
+				secondary: {
+					active: '#00000030',
+					inactive: '#00000000',
+				},
+			},
+
+			highlight: {
+				strong: '{theme.secondary.30}40',
+				active: '{tw.amber.300}20',
+				inactive: '{theme.secondary.30}28',
+			},
+		},
+	},
+}

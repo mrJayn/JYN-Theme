@@ -4,7 +4,7 @@
 	syntax: {
 		markup: {
 			bold: {
-				value: '{color.font.code.28.value}',
+				value: '{color.font.code.27.value}',
 				fontStyle: 'bold',
 			},
 			italic: {

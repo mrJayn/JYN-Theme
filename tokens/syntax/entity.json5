@@ -19,7 +19,7 @@
 				impl: {},
 				tag: {
 					'*': { value: '{color.font.code.7.value}' },
-					reference: { value: '{color.font.code.8.value}' },
+					reference: { value: '{color.font.code.7.value}' },
 					yaml: { value: '{color.font.code.22.value}' },
 				},
 				type: {

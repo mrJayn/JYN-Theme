@@ -1,10 +1,10 @@
 {
 	color: {
 		font: {
-			primary: { value: '{theme.grey.10}' },
-			secondary: { value: '{theme.grey.20}' },
-			tertiary: { value: '{theme.grey.30}88' },
-			quaternary: { value: '{theme.grey.40}88' },
+			primary: { value: '{theme.grey.10}E8' },
+			secondary: { value: '{theme.grey.40}' },
+			tertiary: { value: '{theme.grey.40}AA' },
+			quaternary: { value: '{theme.grey.50}88' },
 			ghost: { value: '{theme.grey.30}44' },
 			inverse: { value: '{color.background.primary.value}' },
 
@@ -36,7 +36,7 @@
 				'23': { value: '{theme.yellow.bright}' },
 
 				'4': { value: '{theme.black}' },
-				'24': { value: '{theme.main.65}' },
+				'24': { value: '{theme.main.70}' },
 
 				'5': { value: '{theme.green}' },
 				'25': { value: '{theme.green.bright}' },
@@ -44,11 +44,8 @@
 				'6': { value: '{theme.teal}' },
 				'26': { value: '{theme.teal.bright}' },
 
-				'7': { value: '{theme.blue}' },
+				'7': { value: '{theme.main.40}' },
 				'27': { value: '{theme.blue.bright}' },
-
-				'8': { value: '{theme.main.50}' },
-				'28': { value: '{theme.main.bright}' },
 
 				'9': { value: '{theme.purple}' },
 				'29': { value: '{theme.purple.bright}' },

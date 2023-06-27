@@ -5,16 +5,16 @@
 		activeSelectionBackground: { value: '{color.background.secondary.value}' },
 		activeSelectionForeground: { value: '{color.font.active.value}' },
 
-		inactiveSelectionBackground: { value: '{color.background.selection.tertiary.inactive.value}' },
+		inactiveSelectionBackground: { value: '#00000000' },
 		inactiveSelectionForeground: { value: '{color.font.secondary.value}' },
 
-		focusBackground: { value: '{color.background.selection.tertiary.active.value}' },
+		focusBackground: { value: '{color.background.selection.secondary.active}' },
 		focusForeground: { value: '{color.font.active.value}' },
 
 		hoverBackground: { value: '{theme.transparent}' },
 		hoverForeground: { value: '{color.font.link.secondary.active.value}' },
 
-		dropBackground: { value: '{color.background.selection.secondary.active.value}' },
+		dropBackground: { value: '{color.background.drop.value}' },
 
 		highlightForeground: { value: '{color.font.primary.value}' },
 		invalidItemForeground: { value: '{color.font.danger.value}' },

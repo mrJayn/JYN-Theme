@@ -25,10 +25,10 @@
 		ansiCyan: { value: '{color.font.code.6.value}' },
 		ansiBrightCyan: { value: '{color.font.code.26.value}' },
 
-		selectionBackground: { value: '{color.background.selection.secondary.active.value}' },
+		selectionBackground: { value: '{color.background.selection.primary.active}' },
 	},
 	terminalCursor: {
-		background: { value: '{color.background.selection.primary.active.value}' },
-		foreground: { value: '{color.background.selection.primary.active.value}' },
+		background: { value: '{color.background.selection.primary.active}' },
+		foreground: { value: '{color.background.selection.primary.active}' },
 	},
 }

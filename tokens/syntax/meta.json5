@@ -41,7 +41,7 @@
 			},
 			structure: {
 				dictionary: {
-					'*': { value: '{color.font.code.28.value}' },
+					'*': { value: '{color.font.code.27.value}' },
 				},
 			},
 			tag: {
@@ -52,7 +52,7 @@
 			},
 			var: {
 				expr: {
-					'*': { value: '{color.font.code.8.value}' },
+					'*': { value: '{color.font.code.7.value}' },
 				},
 			},
 		},

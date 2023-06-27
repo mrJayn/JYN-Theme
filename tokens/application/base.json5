@@ -8,11 +8,6 @@
 	descriptionForeground: { value: '{color.font.secondary.value}' },
 	errorForeground: { value: '{color.font.danger.value}' },
 
-	// Selection background for elements not in the editor, like selecting text in an input
-	selection: {
-		background: { value: '{color.background.selection.primary.active.value}' },
-	},
-
 	// Widgets are the quick command palette, notifications, quick search, etc.
 	widget: {
 		shadow: { value: '#0004' },

@@ -56,6 +56,9 @@
 					/* commas between object/dictionary attributes */
 				},
 			},
+			support: {
+				'*': { value: '{color.font.secondary.value}' },
+			},
 			terminator: {
 				/* Semicolons in JS */ '*': { value: '{color.font.tertiary.value}' },
 			},
