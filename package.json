@@ -23,7 +23,7 @@
 		"publish": "vsce publish"
 	},
 	"galleryBanner": {
-		"color": "#000000",
+		"color": "#27272a",
 		"theme": "dark"
 	},
 	"icon": "images/icon.png",
