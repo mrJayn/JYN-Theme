@@ -42,8 +42,8 @@
 			}
 		]
 	},
-	"dependencies": {},
 	"devDependencies": {
+		"@vscode/vsce": "^2.19.0",
 		"chokidar-cli": "^3.0.0",
 		"style-dictionary": "^3.8.0"
 	}
