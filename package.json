@@ -1,10 +1,10 @@
 {
 	"name": "jyn-theme",
 	"displayName": "JYN Theme",
-	"description": "A neutral theme for VS Code.",
+	"description": "A basic theme for VS Code.",
 	"publisher": "mjayne",
 	"license": "MIT",
-	"version": "1.0.6",
+	"version": "1.0.3",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mrJayn/JYN-Theme"
@@ -16,25 +16,21 @@
 		"vscode": "^1.70.0"
 	},
 	"scripts": {
-		"build": "node scripts/build.js",
+		"build": "node build.js",
 		"watch": "npm run build && chokidar \"themes/**/*.json5\" \"tokens/**/*.json5\" -c \"npm run build\"",
-		"start": "npm run watch",
-		"prepublish": "npm run build",
 		"publish": "vsce publish"
 	},
 	"galleryBanner": {
 		"color": "#27272a",
 		"theme": "dark"
 	},
-	"icon": "images/icon.png",
+	"icon": "/logo.png",
 	"categories": [
 		"Themes"
 	],
 	"keywords": [
 		"JYN",
 		"dark",
-		"minimal",
-		"neutral",
 		"Style Dictionary"
 	],
 	"contributes": {

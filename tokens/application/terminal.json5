@@ -1,29 +1,29 @@
 {
 	terminal: {
 		// To test >> run `./scripts/colors`
-		ansiWhite: { value: '{color.font.secondary.value}' },
-		ansiBrightWhite: { value: '{color.font.primary.value}' },
+		ansiWhite: { value: '{color.font.secondary}' },
+		ansiBrightWhite: { value: '{color.font.primary}' },
 
-		ansiBlack: { value: '{color.font.code.4.value}' },
-		ansiBrightBlack: { value: '{color.font.code.24.value}' },
+		ansiBlack: { value: '{color.font.code.4}' },
+		ansiBrightBlack: { value: '{color.font.code.24}' },
 
-		ansiRed: { value: '{color.font.code.1.value}' },
-		ansiBrightRed: { value: '{color.font.code.21.value}' },
+		ansiRed: { value: '{color.font.code.1}' },
+		ansiBrightRed: { value: '{color.font.code.21}' },
 
-		ansiGreen: { value: '{color.font.code.5.value}' },
-		ansiBrightGreen: { value: '{color.font.code.25.value}' },
+		ansiGreen: { value: '{color.font.code.5}' },
+		ansiBrightGreen: { value: '{color.font.code.25}' },
 
-		ansiYellow: { value: '{color.font.code.3.value}' },
-		ansiBrightYellow: { value: '{color.font.code.23.value}' },
+		ansiYellow: { value: '{color.font.code.3}' },
+		ansiBrightYellow: { value: '{color.font.code.23}' },
 
-		ansiBlue: { value: '{color.font.code.7.value}' },
-		ansiBrightBlue: { value: '{color.font.code.27.value}' },
+		ansiBlue: { value: '{color.font.code.7}' },
+		ansiBrightBlue: { value: '{color.font.code.27}' },
 
-		ansiMagenta: { value: '{color.font.code.9.value}' },
-		ansiBrightMagenta: { value: '{color.font.code.29.value}' },
+		ansiMagenta: { value: '{color.font.code.9}' },
+		ansiBrightMagenta: { value: '{color.font.code.29}' },
 
-		ansiCyan: { value: '{color.font.code.6.value}' },
-		ansiBrightCyan: { value: '{color.font.code.26.value}' },
+		ansiCyan: { value: '{color.font.code.6}' },
+		ansiBrightCyan: { value: '{color.font.code.26}' },
 
 		selectionBackground: { value: '{color.background.selection.primary.active}' },
 	},

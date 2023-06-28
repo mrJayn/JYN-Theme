@@ -1,9 +1,9 @@
 {
 	welcomePage: {
-		background: { value: '{color.background.primary.value}' },
+		background: { value: '{color.background.primary}' },
 
-		tileBackground: { value: '{color.background.secondary.value}' },
-		tileHoverBackground: { value: '{color.background.tertiary.value}' },
+		tileBackground: { value: '{color.background.secondary}' },
+		tileHoverBackground: { value: '{color.background.tertiary}' },
 
 		tileBorder: {},
 
@@ -14,7 +14,7 @@
 	},
 
 	walkThrough: {
-		embeddedEditorBackground: { value: '{color.background.secondary.value}' },
+		embeddedEditorBackground: { value: '{color.background.secondary}' },
 
 		stepTitle: {
 			foreground: {},

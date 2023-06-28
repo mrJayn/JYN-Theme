@@ -3,18 +3,18 @@
 {
 	// You can find this is in the interactive playground page
 	textBlockQuote: {
-		background: { value: '{color.background.tertiary.value}' },
-		border: { value: '{color.border.active.value}' },
+		background: { value: '{color.background.tertiary}' },
+		border: { value: '{color.border.active}' },
 	},
 	textCodeBlock: {
-		background: { value: '{color.background.secondary.value}' },
+		background: { value: '{color.background.secondary}' },
 	},
 	textLink: {
-		activeForeground: { value: '{color.font.link.primary.active.value}' },
-		foreground: { value: '{color.font.link.primary.inactive.value}' },
+		activeForeground: { value: '{color.font.link.primary.active}' },
+		foreground: { value: '{color.font.link.primary.inactive}' },
 	},
 	textPreformat: {
-		foreground: { value: '{color.font.info.value}' },
+		foreground: { value: '{color.font.info}' },
 	},
 	// Still haven't found this
 	textSeparator: {

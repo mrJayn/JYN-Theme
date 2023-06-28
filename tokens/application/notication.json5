@@ -1,36 +1,36 @@
 {
 	notificationCenter: {
-		border: { value: '{color.border.secondary.value}' },
+		border: { value: '{color.border.secondary}' },
 	},
 
 	notificationToast: {
-		border: { value: '{color.border.secondary.value}' },
+		border: { value: '{color.border.secondary}' },
 	},
 
 	notificationCenterHeader: {
-		background: { value: '{color.background.primary.value}' },
-		foreground: { value: '{color.font.primary.value}' },
+		background: { value: '{color.background.primary}' },
+		foreground: { value: '{color.font.primary}' },
 	},
 
 	notifications: {
-		background: { value: '{color.background.quaternary.value}' },
-		foreground: { value: '{color.font.primary.value}' },
-		border: { value: '{color.border.secondary.value}' },
+		background: { value: '{color.background.quaternary}' },
+		foreground: { value: '{color.font.primary}' },
+		border: { value: '{color.border.secondary}' },
 	},
 
 	notificationLink: {
-		foreground: { value: '{color.font.link.primary.active.value}' },
+		foreground: { value: '{color.font.link.primary.active}' },
 	},
 
 	notificationsErrorIcon: {
-		foreground: { value: '{color.font.danger.value}' },
+		foreground: { value: '{color.font.danger}' },
 	},
 
 	notificationsWarningIcon: {
-		foreground: { value: '{color.font.warning.value}' },
+		foreground: { value: '{color.font.warning}' },
 	},
 
 	notificationsInfoIcon: {
-		foreground: { value: '{color.font.info.value}' },
+		foreground: { value: '{color.font.info}' },
 	},
 }

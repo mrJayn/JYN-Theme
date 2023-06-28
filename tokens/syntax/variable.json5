@@ -1,22 +1,22 @@
 {
 	syntax: {
 		variable: {
-			'*': { value: '{color.font.code.7.value}' },
+			'*': { value: '{color.font.code.7}' },
 			language: {
 				super: {
-					value: '{color.font.code.7.value}',
+					value: '{color.font.code.7}',
 					fontStyle: 'italic',
 				},
-				this: { value: '{color.font.code.26.value}' },
+				this: { value: '{color.font.code.26}' },
 			},
 			other: {
-				'*': { value: '{color.font.code.7.value}' },
+				'*': { value: '{color.font.code.7}' },
 				constant: {
-					'*': { value: '{color.font.code.26.value}' },
+					'*': { value: '{color.font.code.26}' },
 				},
 				readwrite: {
 					alias: {
-						'*': { value: '{color.font.code.26.value}' },
+						'*': { value: '{color.font.code.26}' },
 					},
 				},
 			},

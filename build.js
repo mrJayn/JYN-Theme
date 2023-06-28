@@ -2,41 +2,29 @@ const StyleDictionary = require('style-dictionary');
 const fs = require('fs');
 const path = require('path');
 
-// Get Variants
-const themesDirPath = path.join(process.cwd(), '/themes');
-const THEME_VARIANTS = fs.readdirSync(themesDirPath).filter((name) => {
-	return !['application', 'syntax', 'config.json5'].includes(name);
-});
-
 // Stringify the token object paths
 StyleDictionary.registerTransform({
 	name: 'vsCodeName',
 	type: 'name',
-	transformer: (token) => {
-		if (token.path[0] === 'syntax') {
-			if (token.name === '*') {
-				return token.path.slice(1, -1).join('.');
-			} else {
-				return token.path.slice(1).join('.');
-			}
-		} else {
-			return token.path.join('.');
-		}
+	transformer: ({ path, name }) => {
+		if (path[0] !== 'syntax') return path.join('.');
+		if (path[0] === 'syntax' && name === '*') return path.slice(1, -1).join('.');
+		return path.slice(1).join('.');
 	},
 });
 
 // Register file formatter
 StyleDictionary.registerFormat({
 	name: 'vsCodeTheme',
-	formatter: (dictionary, config) => {
-		// Base
+	formatter: (dictionary, { variant }) => {
+		const main = variant === 'jyn';
+
 		const theme = {
-			name: `JYN ${config.themeType}`,
-			type: config.themeType,
+			name: `JYN ${main ? '' : ` - ${variant}`}`,
+			type: main ? 'dark' : variant,
 			colors: {},
 		};
 
-		// Colors
 		dictionary.allProperties
 			.filter((token) => {
 				return !['color', 'theme', 'tw', 'syntax'].includes(token.path[0]);
@@ -45,11 +33,8 @@ StyleDictionary.registerFormat({
 				theme.colors[token.name] = token.value;
 			});
 
-		// Token Colors
 		theme.tokenColors = dictionary.allProperties
-			.filter((token) => {
-				return token.path[0] === 'syntax';
-			})
+			.filter(({ path }) => path[0] === 'syntax')
 			.map((token) => ({
 				scope: token.name,
 				settings: {
@@ -62,22 +47,26 @@ StyleDictionary.registerFormat({
 	},
 });
 
-//  Build each of the theme variants
-THEME_VARIANTS.forEach((themeType) => {
-	StyleDictionary.extend({
-		source: [`themes/config.json5`, `themes/${themeType}/*.json5`, `tokens/application/*.json5`, `tokens/syntax/*.json5`],
-		platforms: {
-			vscode: {
-				buildPath: `build/`,
-				themeType: themeType,
-				transforms: [`vsCodeName`],
-				files: [
-					{
-						destination: `jyn-${themeType}.color-theme.json`,
-						format: `vsCodeTheme`,
-					},
-				],
+// Get Variants & Build each one
+const themesDirPath = path.join(process.cwd(), '/themes');
+
+fs.readdirSync(themesDirPath)
+	.filter((dirent) => !['application', 'syntax', 'config.json5'].includes(dirent))
+	.forEach((theme) => {
+		StyleDictionary.extend({
+			source: [`themes/config.json5`, `themes/${theme}/*.json5`, `tokens/application/*.json5`, `tokens/syntax/*.json5`],
+			platforms: {
+				vscode: {
+					buildPath: `build/`,
+					variant: theme,
+					transforms: [`vsCodeName`],
+					files: [
+						{
+							destination: `${theme}.color-theme.json`,
+							format: `vsCodeTheme`,
+						},
+					],
+				},
 			},
-		},
-	}).buildAllPlatforms();
-});
+		}).buildAllPlatforms();
+	});

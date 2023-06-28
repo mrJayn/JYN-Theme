@@ -1,54 +1,52 @@
 {
 	color: {
 		font: {
-			primary: { value: '{theme.grey.10}E8' },
-			secondary: { value: '{theme.grey.40}' },
-			tertiary: { value: '{theme.grey.40}AA' },
-			quaternary: { value: '{theme.grey.50}88' },
-			ghost: { value: '{theme.grey.30}44' },
-			inverse: { value: '{color.background.primary.value}' },
+			primary: '{theme.grey.10}E8',
+			secondary: '{theme.grey.40}',
+			tertiary: '{theme.grey.40}AA',
+			quaternary: '{theme.grey.50}88',
 
-			active: { value: '{theme.main.neon}' },
-			success: { value: '{theme.green}' },
-			danger: { value: '{theme.red}' },
-			warning: { value: '{theme.orange}' },
-			info: { value: '{theme.blue}' },
+			active: '{theme.main.neon}',
+			success: '{theme.green}',
+			danger: '{theme.red}',
+			warning: '{theme.orange}',
+			info: '{theme.blue}',
 
 			link: {
 				primary: {
-					active: { value: '{theme.main.50}' },
-					inactive: { value: '{theme.main.50}CC' },
+					active: '{theme.main.50}',
+					inactive: '{theme.main.50}CC',
 				},
 				secondary: {
-					active: { value: '{theme.white}' },
-					inactive: { value: '{theme.grey.50}' },
+					active: '{theme.white}',
+					inactive: '{theme.grey.50}',
 				},
 			},
 
 			code: {
-				'1': { value: '{theme.red}' },
-				'21': { value: '{theme.red.bright}' },
+				'1': '{theme.red}',
+				'21': '{theme.red.bright}',
 
-				'2': { value: '{theme.orange}' },
-				'22': { value: '{theme.orange.bright}' },
+				'2': '{theme.orange}',
+				'22': '{theme.orange.bright}',
 
-				'3': { value: '{theme.yellow}' },
-				'23': { value: '{theme.yellow.bright}' },
+				'3': '{theme.yellow}',
+				'23': '{theme.yellow.bright}',
 
-				'4': { value: '{theme.black}' },
-				'24': { value: '{theme.main.70}' },
+				'4': '{theme.black}',
+				'24': '{theme.main.70}',
 
-				'5': { value: '{theme.green}' },
-				'25': { value: '{theme.green.bright}' },
+				'5': '{theme.green}',
+				'25': '{theme.green.bright}',
 
-				'6': { value: '{theme.teal}' },
-				'26': { value: '{theme.teal.bright}' },
+				'6': '{theme.teal}',
+				'26': '{theme.teal.bright}',
 
-				'7': { value: '{theme.main.40}' },
-				'27': { value: '{theme.blue.bright}' },
+				'7': '{theme.main.40}',
+				'27': '{theme.blue.bright}',
 
-				'9': { value: '{theme.purple}' },
-				'29': { value: '{theme.purple.bright}' },
+				'9': '{theme.purple}',
+				'29': '{theme.purple.bright}',
 			},
 		},
 	},

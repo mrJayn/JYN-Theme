@@ -1,15 +1,15 @@
 {
 	// The bottom thing with the terminal, debug console, problems, and output
 	panel: {
-		background: { value: '{color.background.tertiary.value}' },
-		border: { value: '{color.border.tertiary.value}' },
-		dropBorder: { value: '{color.background.drop.value}' },
+		background: { value: '{color.background.tertiary}' },
+		border: { value: '{color.border.tertiary}' },
+		dropBorder: { value: '{color.background.drop}' },
 	},
 
 	panelTitle: {
-		activeBorder: { value: '{color.border.active.value}' },
-		activeForeground: { value: '{color.font.primary.value}' },
-		inactiveForeground: { value: '{color.font.secondary.value}' },
+		activeBorder: {},
+		activeForeground: { value: '{color.font.primary}' },
+		inactiveForeground: { value: '{color.font.secondary}' },
 	},
 
 	panelInput: {

@@ -1,46 +1,33 @@
 {
 	selection: {
-		background: { value: '00000080' },
+		background: { value: '{color.background.selection.primary.active}' },
 	},
 	editor: {
-		background: { value: '{color.background.primary.value}' },
-		foreground: { value: '{color.font.primary.value}' },
+		background: { value: '{color.background.primary}' },
+		foreground: { value: '{color.font.primary}' },
 
-		// Selection
 		selectionBackground: { value: '{color.background.selection.primary.active}' },
 		inactiveSelectionBackground: {},
 
-		// Same content as the selection
 		selectionHighlightBackground: { value: '{color.background.highlight.active}' },
 
-		// Read-Acess ( cursor within word/variable )
 		wordHighlightBackground: { value: '{color.background.highlight.inactive}' },
-		// current word
 		wordHighlightStrongBackground: { value: '{color.background.highlight.strong}' },
 
-		// Searched Text
 		findMatchBackground: { value: '{color.background.highlight.active}' },
-		findMatchBorder: { value: '{color.border.primary.value}' },
+		findMatchBorder: { value: '{color.border.primary}' },
 		findMatchHighlightBackground: { value: '#00000000' },
 
-		// When you "find in selection" this is the background for the selection
 		findRangeHighlightBackground: {},
 
-		// Highlight below the word for which a hover is shown.
-		// Hover background only happens on non-selected and non-highlighted text
-		hoverHighlightBackground: { value: '{color.background.drop.value}' },
+		hoverHighlightBackground: { value: '{color.background.drop}' },
 
-		// Background of the line(s) the cursor is currently on
 		lineHighlightBackground: { value: '{color.background.selection.secondary.active}' },
 		lineHighlightBorder: { value: '#00000000' },
 
-		// File search match
-		rangeHighlightBackground: { value: '{color.background.tertiary.value}' },
-
-		// Debugging...
+		rangeHighlightBackground: { value: '{color.background.tertiary}' },
 		focusedStackFrameHighlightBackground: {},
 		stackFrameHighlightBackground: {},
-
 		snippetTabstopHighlightBackground: {},
 		snippetTabstopHighlightBorder: {},
 		snippetFinalTabstopHighlightBackground: {},
@@ -48,27 +35,27 @@
 	},
 
 	editorLineNumber: {
-		foreground: { value: '{color.font.tertiary.value}' },
-		activeForeground: { value: '{color.font.primary.value}' },
+		foreground: { value: '{color.font.tertiary}' },
+		activeForeground: { value: '{color.font.primary}' },
 	},
 
 	editorCursor: {
-		foreground: { value: '{color.background.warning.value}' },
+		foreground: { value: '{color.background.warning}' },
 	},
 
 	editorLink: {
-		activeForeground: '{color.font.link.primary.inactive.value}',
+		activeForeground: '{color.font.link.primary.inactive}',
 	},
 
 	editorGutter: {
-		background: { value: '{color.background.primary.value}' },
-		modifiedBackground: { value: '{color.border.info.value}' },
-		addedBackground: { value: '{color.border.success.value}' },
-		deletedBackground: { value: '{color.border.danger.value}' },
+		background: { value: '{color.background.primary}' },
+		modifiedBackground: { value: '{color.border.info}' },
+		addedBackground: { value: '{color.border.success}' },
+		deletedBackground: { value: '{color.border.danger}' },
 	},
 
 	editorOverviewRuler: {
-		border: { value: '{color.border.secondary.value}' },
+		border: { value: '{color.border.secondary}' },
 
 		findMatchForeground: { value: '#00ff00CC' },
 		rangeHighlightForeground: { value: '#0000ffCC' },
@@ -78,73 +65,58 @@
 		incomingContentForeground: { value: '#00ff00CC' },
 		commonContentForeground: { value: '#0000ffCC' },
 
-		// Git indicators, will match similar ones in editorGutter
-		modifiedForeground: { value: '{color.border.info.value}' },
-		addedForeground: { value: '{color.border.success.value}' },
-		deletedForeground: { value: '{color.border.danger.value}' },
+		modifiedForeground: { value: '{color.border.info}' },
+		addedForeground: { value: '{color.border.success}' },
+		deletedForeground: { value: '{color.border.danger}' },
 
-		// Will match squiggly lines
-		errorForeground: { value: '{color.border.danger.value}' },
-		warningForeground: { value: '{color.border.warning.value}' },
-		infoForeground: { value: '{color.border.info.value}' },
-		bracketMatchForeground: { value: '{editorBracketMatch.background.value}' },
+		errorForeground: { value: '{color.border.danger}' },
+		warningForeground: { value: '{color.border.warning}' },
+		infoForeground: { value: '{color.border.info}' },
+		bracketMatchForeground: { value: '{editorBracketMatch.background}' },
 	},
 
-	// Error squiggly underline
 	editorError: {
-		foreground: { value: '{color.font.danger.value}' },
-		border: {},
-	},
-	// Warning squiggly underline
-	editorWarning: {
-		foreground: { value: '{color.font.warning.value}' },
-		border: {},
-	},
-	// --
-	editorInfo: {
-		foreground: { value: '{color.font.info.value}' },
-		border: {},
-	},
-	// --
-	editorHint: {
-		foreground: { value: '{color.font.active.value}' },
+		foreground: { value: '{color.font.danger}' },
 		border: {},
 	},
 
-	// Highlights matched brackets when the cursor is on one
-	// Setting: editor.matchBrackets
+	editorWarning: {
+		foreground: { value: '{color.font.warning}' },
+		border: {},
+	},
+	editorInfo: {
+		foreground: { value: '{color.font.info}' },
+		border: {},
+	},
+	editorHint: {
+		foreground: { value: '{color.font.active}' },
+		border: {},
+	},
+
 	editorBracketMatch: {
 		background: { value: '{color.background.highlight.active}' },
 		border: { value: '#0000' },
 	},
 
-	// Shows spaces/tabs
 	editorWhitespace: {
-		foreground: { value: '{color.font.ghost.value}' },
+		foreground: { value: '#FFF2' },
 	},
 
-	// Indent Line Color
-	// Setting: editor.renderIndentGuides || editor.highlightActiveIndentGuide
 	editorIndentGuide: {
-		background: { value: '{color.border.tertiary.value}' },
-		activeBackground: { value: '{color.border.primary.value}' },
+		background: { value: '{color.border.tertiary}' },
+		activeBackground: { value: '{color.border.primary}' },
 	},
 
-	// Ruler Color
-	// Setting: editor.rulers
 	editorRuler: {
-		foreground: { value: '{color.border.secondary.value}' },
+		foreground: { value: '{color.border.secondary}' },
 	},
 
-	// Git info.
-	// Setting: editor.codeLens
 	editorCodeLens: {
-		foreground: { value: '{color.font.link.secondary.inactive.value}' },
+		foreground: { value: '{color.font.link.secondary.inactive}' },
 	},
 
-	// Unused code
 	editorUnnecessaryCode: {
 		opacity: { value: '#00000088' },
-		border: { value: '{color.border.primary.value}' },
+		border: { value: '{color.border.primary}' },
 	},
 }

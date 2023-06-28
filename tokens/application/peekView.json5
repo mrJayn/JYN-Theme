@@ -3,34 +3,34 @@
 {
 	// Right click on a function/variable and click on peek view in the context menu
 	peekView: {
-		border: { value: '{color.border.primary.value}' },
+		border: { value: '{color.border.primary}' },
 	},
 
 	peekViewEditor: {
-		background: { value: '{color.background.primary.value}' },
-		matchHighlightBackground: { value: '{color.background.quaternary.value}' },
+		background: { value: '{color.background.primary}' },
+		matchHighlightBackground: { value: '{color.background.quaternary}' },
 		matchHighlightBorder: {},
 	},
 
 	//
 	peekViewResult: {
-		background: { value: '{color.background.secondary.value}' },
-		fileForeground: { value: '{color.font.link.primary.active.value}' },
-		lineForeground: { value: '{color.font.primary.value}' },
-		matchHighlightBackground: { value: '{editor.findMatchHighlightBackground.value}' },
-		selectionBackground: { value: '{editor.findMatchBackground.value}' },
+		background: { value: '{color.background.secondary}' },
+		fileForeground: { value: '{color.font.link.primary.active}' },
+		lineForeground: { value: '{color.font.primary}' },
+		matchHighlightBackground: { value: '{editor.findMatchHighlightBackground}' },
+		selectionBackground: { value: '{editor.findMatchBackground}' },
 		selectionForeground: {},
 	},
 
 	peekViewTitle: {
-		background: { value: '{color.background.tertiary.value}' },
+		background: { value: '{color.background.tertiary}' },
 	},
 
 	peekViewTitleDescription: {
-		foreground: { value: '{color.font.primary.value}' },
+		foreground: { value: '{color.font.primary}' },
 	},
 
 	peekViewTitleLabel: {
-		foreground: { value: '{color.font.tertiary.value}' },
+		foreground: { value: '{color.font.tertiary}' },
 	},
 }

@@ -1,15 +1,16 @@
 {
 	color: {
 		border: {
-			primary: { value: '#FFF8' },
-			secondary: { value: '#FFF4' },
-			tertiary: { value: '#FFF2' },
-			// "focus": { "value": "{tw.pink.500}66" },
-			active: { value: '#FFFA' },
-			success: { value: '{tw.green.500}CC' },
-			danger: { value: '{tw.orange.500}CC' },
-			warning: { value: '{tw.amber.500}' },
-			info: { value: '{tw.sky.500}CC' },
+			primary: '{theme.grey.50}',
+			secondary: '{theme.grey.60}',
+			tertiary: '{theme.grey.70}',
+
+			active: '{theme.main.30}',
+
+			success: '{tw.green.500}CC',
+			danger: '{tw.orange.500}CC',
+			warning: '{theme.red}',
+			info: '{tw.sky.500}CC',
 		},
 	},
 }

@@ -2,35 +2,35 @@
 	// List and trees like the File Explorer.
 	// An active list/tree has keyboard focus, an inactive does not.
 	list: {
-		activeSelectionBackground: { value: '{color.background.secondary.value}' },
-		activeSelectionForeground: { value: '{color.font.active.value}' },
+		activeSelectionBackground: { value: '{color.background.secondary}' },
+		activeSelectionForeground: { value: '{color.font.active}' },
 
 		inactiveSelectionBackground: { value: '#00000000' },
-		inactiveSelectionForeground: { value: '{color.font.secondary.value}' },
+		inactiveSelectionForeground: { value: '{color.font.secondary}' },
 
 		focusBackground: { value: '{color.background.selection.secondary.active}' },
-		focusForeground: { value: '{color.font.active.value}' },
+		focusForeground: { value: '{color.font.active}' },
 
 		hoverBackground: { value: '{theme.transparent}' },
-		hoverForeground: { value: '{color.font.link.secondary.active.value}' },
+		hoverForeground: { value: '{color.font.link.secondary.active}' },
 
-		dropBackground: { value: '{color.background.drop.value}' },
+		dropBackground: { value: '{color.background.drop}' },
 
-		highlightForeground: { value: '{color.font.primary.value}' },
-		invalidItemForeground: { value: '{color.font.danger.value}' },
-		errorForeground: { value: '{color.font.danger.value}' },
-		warningForeground: { value: '{color.font.warning.value}' },
+		highlightForeground: { value: '{color.font.primary}' },
+		invalidItemForeground: { value: '{color.font.danger}' },
+		errorForeground: { value: '{color.font.danger}' },
+		warningForeground: { value: '{color.font.warning}' },
 	},
 
 	// You can trigger this by placing focus in the file explorer and start typing
 	listFilterWidget: {
-		background: { value: '{color.background.secondary.value}' },
-		outline: { value: '{color.border.secondary.value}' },
-		noMatchesOutline: { value: '{color.border.danger.value}' },
+		background: { value: '{color.background.secondary}' },
+		outline: { value: '{color.border.secondary}' },
+		noMatchesOutline: { value: '{color.border.danger}' },
 	},
 
 	// Icons are the ones in the panel, not the ones in the activity bar
 	icon: {
-		foreground: { value: '{color.font.primary.value}' },
+		foreground: { value: '{color.font.primary}' },
 	},
 }

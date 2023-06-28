@@ -1,9 +1,9 @@
 {
 	// For coloring inserted/removed text >> use either background  OR  border color **BUT NOT BOTH**
 	diffEditor: {
-		insertedTextBackground: { value: '{color.background.success.value}33' },
+		insertedTextBackground: { value: '{theme.lime}33' },
 		insertedTextBorder: {},
-		removedTextBackground: { value: '{color.background.danger.value}33' },
+		removedTextBackground: { value: '{color.background.danger}33' },
 		removedTextBorder: {},
 		border: {},
 		diagonalFill: {},

@@ -1,9 +1,9 @@
 {
 	extensionButton: {
 		// install button
-		prominentForeground: { value: '{color.font.primary.value}' },
-		prominentBackground: { value: '{color.background.interactive.base.value}' },
-		prominentHoverBackground: { value: '{color.background.interactive.hover.value}' },
+		prominentForeground: { value: '{color.font.primary}' },
+		prominentBackground: { value: '{color.background.interactive.base}' },
+		prominentHoverBackground: { value: '{color.background.interactive.hover}' },
 	},
 	extensionBadge: {
 		remoteBackground: {},

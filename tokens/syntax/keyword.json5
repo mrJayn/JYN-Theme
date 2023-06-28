@@ -5,35 +5,35 @@
 	syntax: {
 		keyword: {
 			// Using '*' here will apply this to the `keyword` scope
-			'*': { value: '{color.font.code.7.value}' },
+			'*': { value: '{color.font.code.7}' },
 			control: {
-				'*': { value: '{color.font.code.27.value}' },
+				'*': { value: '{color.font.code.27}' },
 				conditional: {},
 				export: {},
 				import: {
-					value: '{color.font.code.7.value}',
+					value: '{color.font.code.7}',
 					fontStyle: 'italic',
 				},
 				from: {
-					value: '{color.font.code.7.value}',
+					value: '{color.font.code.7}',
 					fontStyle: 'italic',
 				},
 				flow: {
-					value: '{color.font.code.7.value}',
+					value: '{color.font.code.7}',
 				},
 			},
 			operator: {
-				'*': { value: '{color.font.code.7.value}' },
+				'*': { value: '{color.font.code.7}' },
 				arithmetic: {},
 				assignment: {},
 				bitwise: {},
 				logical: {
-					value: '{color.font.primary.value}',
+					value: '{color.font.primary}',
 				},
 				word: {},
 			},
 			other: {
-				unit: { value: '{color.font.code.29.value}' },
+				unit: { value: '{color.font.code.29}' },
 			},
 		},
 	},

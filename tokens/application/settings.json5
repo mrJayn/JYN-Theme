@@ -4,12 +4,12 @@
 		// Hover links
 		// Active links headers
 		// Setting names
-		headerForeground: { value: '{color.font.link.secondary.active.value}' },
-		textInputBackground: { value: '{color.background.tertiary.value}' },
-		textInputForeground: { value: '{color.font.primary.value}' },
-		dropdownBackground: { value: '{color.background.tertiary.value}' },
-		dropdownForeground: { value: '{color.font.primary.value}' },
+		headerForeground: { value: '{color.font.link.secondary.active}' },
+		textInputBackground: { value: '{color.background.tertiary}' },
+		textInputForeground: { value: '{color.font.primary}' },
+		dropdownBackground: { value: '{color.background.tertiary}' },
+		dropdownForeground: { value: '{color.font.primary}' },
 		// Left Border on modified setting
-		modifiedItemIndicator: { value: '{color.border.info.value}' },
+		modifiedItemIndicator: { value: '{color.border.info}' },
 	},
 }

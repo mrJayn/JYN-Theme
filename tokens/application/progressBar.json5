@@ -1,5 +1,5 @@
 {
 	progressBar: {
-		background: { value: '{color.background.info.value}' },
+		background: { value: '{color.background.info}' },
 	},
 }
