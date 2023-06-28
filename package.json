@@ -18,7 +18,7 @@
 	"scripts": {
 		"build": "node build.js",
 		"watch": "npm run build && chokidar \"themes/**/*.json5\" \"tokens/**/*.json5\" -c \"npm run build\"",
-		"publish": "vsce publish"
+		"publish": "vsce publish --yarn"
 	},
 	"galleryBanner": {
 		"color": "#27272a",
