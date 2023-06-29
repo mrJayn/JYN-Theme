@@ -6,7 +6,7 @@
 	"publisher": "mjayne",
 	"license": "MIT",
 	"author": "Michael Jayne [@mrJayn]",
-	"icon": "/images/logo.png",
+	"icon": "logo.png",
 	"galleryBanner": {
 		"color": "#27272a",
 		"theme": "dark"
@@ -39,17 +39,15 @@
 			{
 				"label": "JYN Theme",
 				"uiTheme": "vs-dark",
-				"path": "./build/jyn.color-theme.json"
+				"path": "./build/JYN-Theme-Default.json"
 			}
 		]
 	},
 	"scripts": {
 		"build": "node scripts/build.js",
-		"watch": "npm run build && chokidar \"src/**/*.json5\" -c \"npm run build\"",
-		"publish": "vsce publish"
+		"watch": "npm run build && chokidar \"src/**/*.json5\" -c \"npm run build\""
 	},
 	"devDependencies": {
-		"@vscode/vsce": "^2.19.0",
 		"chokidar-cli": "^3.0.0",
 		"style-dictionary": "^3.8.0"
 	}

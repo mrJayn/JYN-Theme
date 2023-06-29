@@ -17,10 +17,9 @@ StyleDictionary.registerTransform({
 StyleDictionary.registerFormat({
 	name: 'vsCodeTheme',
 	formatter: (dictionary, { variant }) => {
-		const main = variant === 'jyn';
 		const theme = {
-			name: `JYN ${main ? '' : ` - ${variant}`}`,
-			type: main ? 'dark' : variant,
+			name: `JYN-Theme-${variant}`,
+			type: 'dark',
 			colors: {},
 		};
 

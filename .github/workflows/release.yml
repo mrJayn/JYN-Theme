@@ -5,14 +5,43 @@ on:
         branches:
             - main
         tags:
-            - release
+            - v*
+    pull_request:
+        branches:
+            - '*'
 
 jobs:
-    deploy:
+    release:
         runs-on: ubuntu-latest
+        if: contains(github.ref, 'tag')
         steps:
             - uses: actions/checkout@v3
-            - run: npm install
+
+            - name: Use Node Version 16
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '16.x'
+
+            - name: Get npm cache directory
+              id: npm-cache-dir
+              run: |
+                  echo "::set-output name=dir::$(npm config get cache)"
+
+            - uses: actions/cache@v3
+              id: npm-cache
+              with:
+                  path: ${{ steps.npm-cache-dir.outputs.dir }}
+                  key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+                  restore-keys: |
+                      ${{ runner.os }}-node-
+
+            - name: Install Dependencies
+              run: npm ci
+              if: steps.cache-npm-cache.outputs.cache-hit != 'true' || steps.cache-node-modules.outputs.cache-hit != 'true'
+
+            - name: Build
+              run: npm run build
+
             - uses: lannonbr/vsce-action@master
               with:
                   args: 'publish -p $VSCE_TOKEN'
