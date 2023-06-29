@@ -4,27 +4,32 @@ on:
     push:
         branches:
             - main
-        tags:
-            - v*
     pull_request:
         branches:
-            - '*'
+            - main
 
 jobs:
-    test:
+    version:
+        name: Get Version from packageJSON
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v3
-        - name: get-npm-version
-          id: package
-          uses: martinbeentjes/npm-get-version-action@v1.3.1
-            
-        - name: Check Package Version
-          env:
-            CURRENT_VERSION: ${{ steps.package-version.outputs.current-version}}
-          run: |
-            echo $CURRENT_VERSION
-            
+            - name: Checkout
+              uses: actions/checkout@v3
+              
+            - name: Get Version
+              id: json
+              uses: martinbeentjes/npm-get-version-action@v1.3.1
+              with:
+                path: .
+              
+            - name: Check Package Version
+              env:
+                  CURRENT_VERSION: ${{ steps.json.outputs.current-version}}
+              run: |
+                  echo $CURRENT_VERSION
+                  echo cat package.json | jq -r '.version'
+
+
     release:
         runs-on: ubuntu-latest
         if: contains(github.ref, 'tag')
