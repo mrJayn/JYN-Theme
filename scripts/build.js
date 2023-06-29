@@ -53,7 +53,7 @@ fs.readdirSync(VARIANTS_FOLDER_PATH).forEach((variant) => {
 				transforms: [`vsCodeName`],
 				files: [
 					{
-						destination: `${variant}.color-theme.json`,
+						destination: `JYN-Theme-${variant}.json`,
 						format: `vsCodeTheme`,
 					},
 				],

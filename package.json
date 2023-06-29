@@ -46,9 +46,11 @@
 	"scripts": {
 		"build": "node scripts/build.js",
 		"watch": "npm run build && chokidar \"src/**/*.json5\" -c \"npm run build\"",
-		"patch": "vsce publish patch",
-		"minor": "vsce publish minor",
-		"major": "vsce publish major"
+		"prevsce:publish": "npm run build",
+		"vsce:publish": "\"vsce publish %npm_config_increment%\"",
+		"publish:patch": "npm run vsce:publish --increment=patch",
+		"publish:minor": "npm run vsce:publish --increment=minor",
+		"publish:major": "npm run vsce:publish --increment=major"
 	},
 	"devDependencies": {
 		"@vscode/vsce": "^2.19.0",
