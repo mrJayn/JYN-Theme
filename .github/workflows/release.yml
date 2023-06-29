@@ -14,20 +14,16 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v2
-        - name: Set output
-          id: vars
-          run: | 
-            echo ::set-output name=SOURCE_BRANCH::${GITHUB_REF#refs/heads/}
-            echo ::set-output name=SOURCE_TAG::${GITHUB_REF#refs/tags/}
+        - uses: actions/checkout@v3
+        - name: get-npm-version
+          id: package
+          uses: martinbeentjes/npm-get-version-action@v1.3.1
             
-        - name: Check output
+        - name: Check Package Version
           env:
-            SOURCE_BRANCH: ${{ steps.vars.outputs.SOURCE_BRANCH }}
-            SOURCE_TAG: ${{ steps.vars.outputs.SOURCE_TAG }}
+            CURRENT_VERSION: ${{ steps.package-version.outputs.current-version}}
           run: |
-            echo $SOURCE_BRANCH
-            echo $SOURCE_TAG        
+            echo $CURRENT_VERSION
             
     release:
         runs-on: ubuntu-latest
