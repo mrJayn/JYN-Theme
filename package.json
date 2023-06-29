@@ -2,7 +2,7 @@
 	"name": "jyn-theme",
 	"displayName": "JYN Theme",
 	"description": "A basic theme for VS Code.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"publisher": "mjayne",
 	"license": "MIT",
 	"author": "Michael Jayne [@mrJayn]",
