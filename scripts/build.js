@@ -2,7 +2,8 @@ const StyleDictionary = require('style-dictionary');
 const fs = require('fs');
 const path = require('path');
 
-// Stringify the token object paths
+const VARIANTS_FOLDER_PATH = path.join(process.cwd(), '/src/variants');
+
 StyleDictionary.registerTransform({
 	name: 'vsCodeName',
 	type: 'name',
@@ -13,12 +14,10 @@ StyleDictionary.registerTransform({
 	},
 });
 
-// Register file formatter
 StyleDictionary.registerFormat({
 	name: 'vsCodeTheme',
 	formatter: (dictionary, { variant }) => {
 		const main = variant === 'jyn';
-
 		const theme = {
 			name: `JYN ${main ? '' : ` - ${variant}`}`,
 			type: main ? 'dark' : variant,
@@ -26,9 +25,7 @@ StyleDictionary.registerFormat({
 		};
 
 		dictionary.allProperties
-			.filter((token) => {
-				return !['color', 'theme', 'tw', 'syntax'].includes(token.path[0]);
-			})
+			.filter((token) => !['color', 'theme', 'tw', 'syntax'].includes(token.path[0]))
 			.forEach((token) => {
 				theme.colors[token.name] = token.value;
 			});
@@ -47,26 +44,21 @@ StyleDictionary.registerFormat({
 	},
 });
 
-// Get Variants & Build each one
-const themesDirPath = path.join(process.cwd(), '/themes');
-
-fs.readdirSync(themesDirPath)
-	.filter((dirent) => !['application', 'syntax', 'config.json5'].includes(dirent))
-	.forEach((theme) => {
-		StyleDictionary.extend({
-			source: [`themes/config.json5`, `themes/${theme}/*.json5`, `tokens/application/*.json5`, `tokens/syntax/*.json5`],
-			platforms: {
-				vscode: {
-					buildPath: `build/`,
-					variant: theme,
-					transforms: [`vsCodeName`],
-					files: [
-						{
-							destination: `${theme}.color-theme.json`,
-							format: `vsCodeTheme`,
-						},
-					],
-				},
+fs.readdirSync(VARIANTS_FOLDER_PATH).forEach((variant) => {
+	StyleDictionary.extend({
+		source: [`src/jyn.theme.config.json5`, `src/variants/${variant}/*.json5`, `src/tokens/application/*.json5`, `src/tokens/syntax/*.json5`],
+		platforms: {
+			vscode: {
+				buildPath: `build/`,
+				variant: variant,
+				transforms: [`vsCodeName`],
+				files: [
+					{
+						destination: `${variant}.color-theme.json`,
+						format: `vsCodeTheme`,
+					},
+				],
 			},
-		}).buildAllPlatforms();
-	});
+		},
+	}).buildAllPlatforms();
+});

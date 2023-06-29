@@ -10,7 +10,6 @@
 		activeBorder: {},
 		activeFocusBorder: {},
 	},
-
 	activityBarBadge: {
 		background: { value: '{color.background.badge}' },
 		foreground: { value: '{color.font.primary}' },

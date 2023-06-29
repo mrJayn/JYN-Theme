@@ -2,9 +2,16 @@
 	"name": "jyn-theme",
 	"displayName": "JYN Theme",
 	"description": "A basic theme for VS Code.",
+	"version": "1.0.0",
 	"publisher": "mjayne",
 	"license": "MIT",
-	"version": "1.0.3",
+	"author": "Michael Jayne [@mrJayn]",
+	"icon": "/images/logo.png",
+	"galleryBanner": {
+		"color": "#27272a",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/mrJayn/JYN-Theme",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/mrJayn/JYN-Theme"
@@ -15,16 +22,6 @@
 	"engines": {
 		"vscode": "^1.70.0"
 	},
-	"scripts": {
-		"build": "node build.js",
-		"watch": "npm run build && chokidar \"themes/**/*.json5\" \"tokens/**/*.json5\" -c \"npm run build\"",
-		"publish": "vsce publish --yarn"
-	},
-	"galleryBanner": {
-		"color": "#27272a",
-		"theme": "dark"
-	},
-	"icon": "/logo.png",
 	"categories": [
 		"Themes"
 	],
@@ -32,6 +29,10 @@
 		"JYN",
 		"dark",
 		"Style Dictionary"
+	],
+	"extensionKind": [
+		"ui",
+		"workspace"
 	],
 	"contributes": {
 		"themes": [
@@ -41,6 +42,11 @@
 				"path": "./build/jyn.color-theme.json"
 			}
 		]
+	},
+	"scripts": {
+		"build": "node scripts/build.js",
+		"watch": "npm run build && chokidar \"src/**/*.json5\" -c \"npm run build\"",
+		"publish": "vsce publish"
 	},
 	"devDependencies": {
 		"@vscode/vsce": "^2.19.0",

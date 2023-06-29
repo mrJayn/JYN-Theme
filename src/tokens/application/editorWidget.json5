@@ -12,7 +12,7 @@
 	editorSuggestWidget: {
 		foreground: { value: '{color.font.secondary}' },
 		background: { value: '{color.background.quaternary}' },
-		border: { value: '{theme.transparent}' },
+		border: { value: '#00000000' },
 		highlightForeground: { value: '{color.font.primary}' },
 		selectedBackground: { value: '{color.background.selection.primary.inactive}' },
 	},

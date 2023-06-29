@@ -2,7 +2,6 @@
 	theme: {
 		white: '#ffffff',
 		black: '#000000',
-		transparent: '#00000000',
 		main: {
 			'10': '#e7edf7',
 			'20': '#cfdcef',

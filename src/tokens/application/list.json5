@@ -11,7 +11,7 @@
 		focusBackground: { value: '{color.background.selection.secondary.active}' },
 		focusForeground: { value: '{color.font.active}' },
 
-		hoverBackground: { value: '{theme.transparent}' },
+		hoverBackground: { value: '#00000000' },
 		hoverForeground: { value: '{color.font.link.secondary.active}' },
 
 		dropBackground: { value: '{color.background.drop}' },

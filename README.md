@@ -1,6 +1,6 @@
 # _JYN Theme_
 
-![screenshot](screenshot.png)
+![screenshot](images/screenshot.png)
 
 <br>
 
